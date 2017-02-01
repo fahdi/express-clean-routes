@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "dev": "NODE_ENV=development DEBUG=teamwork-analytics:* nodemon ./bin/www",
-    "start": "NODE_ENV=development DEBUG=teamwork-analytics:* node ./bin/www",
+    "dev": "NODE_ENV=development DEBUG=express-clean-routes:* nodemon ./bin/www",
+    "start": "NODE_ENV=development DEBUG=express-clean-routes:* node ./bin/www",
     "lint": "node ./node_modules/eslint/bin/eslint.js .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
