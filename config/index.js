@@ -19,7 +19,21 @@ var config = convict({
     format: "port",
     default: 3000,
     env: "PORT"
-  }
+  },
+  database: {
+    host: {
+      doc: "Database host name/IP",
+      format: '*',
+      default: 'mongodb://localhost:27017',
+      env: 'MONGODB'
+    },
+    name: {
+      doc: "Database name",
+      format: String,
+      default: 'express-clean-routes',
+      env: 'MONGODB'
+    }
+  },
 });
  
 // Load environment dependent configuration 
