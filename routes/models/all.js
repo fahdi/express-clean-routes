@@ -1,4 +1,4 @@
-const data = require('../../data/index.json');
+const data = require('../../data');
 
 module.exports = (req, res) => {
   const models = data.models;
