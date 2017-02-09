@@ -1,4 +1,4 @@
-const data = require('../../data/index.json');
+const data = require('../../data');
 
 module.exports = (req, res) => {
   const modelId = req.params.modelId * 1;

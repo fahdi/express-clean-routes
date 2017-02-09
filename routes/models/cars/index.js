@@ -5,5 +5,4 @@ const single = require('./single');
 cars.get('/', all);
 cars.get('/:carId', single);
 
-
 module.exports = cars;
