@@ -11,13 +11,13 @@ models.get('/:modelId', single);
 models.use('/:modelId/cars', cars);
 
 models.param('modelId', (req, res, next, value) => {
-  const model = data.models.find(m => m.id === (value * 1));
+  const model = data.models.find((m) => m.id === (value * 1));
 
   if (model) {
     req['model'] = model;
     next();
   } else {
-  	res.status(404).json({ message: 'Invalid model ID' });    
+  	res.status(404).json({ message: 'Invalid model ID' });
   }
 });
 
