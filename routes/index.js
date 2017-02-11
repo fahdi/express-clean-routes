@@ -7,7 +7,9 @@ router.get('/', function(req, res, next) {
 });
 
 const models = require('./models');
+const cars = require('./cars');
 
 router.use('/models', models);
+router.use('/cars', cars);
 
 module.exports = router;
