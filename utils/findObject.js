@@ -8,7 +8,7 @@ module.exports = (type) => {
       req[type] = obj;
       next();
     } else {
-      res.status(404).json({ message: `Invalid ${type} ID` });      
+      res.status(404).json({ message: `Can't find ${type} with ID: ${value}, aka. 404` });
     }
   };
 };

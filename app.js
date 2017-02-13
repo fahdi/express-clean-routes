@@ -29,6 +29,13 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
 
+// This is a temporary setup for showing a JSON response for 404 instead of an HTML one
+app.use(function(req, res, next) {  
+  res.status(404).json({ message: `Can't find what you are looking for, aka. 404` });      
+  next(err);
+});
+
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   const err = new Error('Not Found');
